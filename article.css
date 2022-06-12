@@ -8,6 +8,20 @@ article {
   font-family: sans-serif;
   width: 600px;
   margin: 50px auto;
+  position: relative;
+}
+
+article::before {
+  content: "Sale";
+  text-transform: uppercase;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  left: -44px;
+  top: -22px;
 }
 
 .title {
