@@ -11,7 +11,15 @@ article {
   position: relative;
 }
 
-article::before {
+.title {
+  text-align: center;
+  background: #f7f7f7;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 15px;
+}
+
+.title::before {
   content: "Sale";
   text-transform: uppercase;
   background-color: #ff0000;
@@ -22,14 +30,11 @@ article::before {
   position: absolute;
   left: -44px;
   top: -22px;
+  transition: all 300ms ease-in;
 }
 
-.title {
-  text-align: center;
-  background: #f7f7f7;
-  text-transform: uppercase;
-  font-size: 24px;
-  padding: 15px;
+.title:hover::before {
+  transform: rotate(-45deg);
 }
 
 .post-image {
